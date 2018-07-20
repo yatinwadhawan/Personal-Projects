@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cfcs.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name="com.cfcs.main.ApplicationContextProvider"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cfcs.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.cfcs.service.Reciever" >
+            <intent-filter>
+                <action android:name="com.paad.network.ACTION_REFRESH_ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cfcs.calendar.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.paad.network.ALARM_RECEIVER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.cfcs.service.DataSyncService"
+            android:enabled="true"
+            android:screenOrientation="portrait" >
+        </service>
+
+        <activity
+            android:name="com.cfcs.main.BasePageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.CaseUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.CaseDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.CaseUpdates"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.AddEventActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.SendSMS"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.EditCaseUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.calendar.SchedulerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.AddTeamMemberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.calendar.EventsListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.calendar.CalendarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.calendar.EventListDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.calendar.EditSchedulerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cfcs.main.AddReminderAdvocateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Welcome User"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:id="@+id/caseupdate"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@drawable/caseupdateicon"
+            android:text="" />
+
+        <Button
+            android:id="@+id/calendar"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.85"
+            android:background="@drawable/calandericon"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@drawable/chaticon"
+            android:text=""
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logouticon"
+            android:text=""
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</LinearLayout>

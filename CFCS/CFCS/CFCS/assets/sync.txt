@@ -1,0 +1,165 @@
+{
+        "AdminUser": [
+            {
+                "UserID": "1",
+                "RoleID": "1",
+                "Name": "Vijay Kumar",
+                "MobileNo": "8802210523",
+                "UserName": "vijay",
+                "Password": "cfcs",
+                "EmailID": "vijay@cfcs.co.in",
+                "LastUpdate": "2013-06-29 12:06:37"
+            },
+            {
+                "UserID": "3",
+                "RoleID": "3",
+                "Name": "Pradeep",
+                "MobileNo": "8802210523",
+                "UserName": "pradeep@cfcs.co.in",
+                "Password": "pra523",
+                "EmailID": "pradeep@cfcs.co.in",
+                "LastUpdate": "2013-07-01 14:45:23"
+            },
+            {
+                "UserID": "4",
+                "RoleID": "4",
+                "Name": "Yatin",
+                "MobileNo": "8527115032",
+                "UserName": "pradeep@cfcs.co.in",
+                "Password": "pra523",
+                "EmailID": "pradeep@cfcs.co.in",
+                "LastUpdate": "2013-07-01 14:45:23"
+            },
+            {
+                "UserID": "5",
+                "RoleID": "5",
+                "Name": "Akshay",
+                "MobileNo": "8802210523",
+                "UserName": "pradeep@cfcs.co.in",
+                "Password": "pra523",
+                "EmailID": "pradeep@cfcs.co.in",
+                "LastUpdate": "2013-07-01 14:45:23"
+            }
+        ],
+        "GroupMaster": [
+            {
+                "GroupID": "1",
+                "GroupName": "High Court Group",
+                "UpdateDate": "2013-06-29 19:15:49"
+            },
+            {
+                "GroupID": "2",
+                "GroupName": "Supreme Court Group",
+                "UpdateDate": "2013-07-01 12:06:15"
+            }
+        ],
+        "GroupRelation": {
+            "GroupID": "2",
+            "MemberID": "3"
+        },
+        "CustomerMaster": {
+            "CustomerID": "1",
+            "CustomerName": "Ranjan Kumar",
+            "MobileNo": "",
+            "UpdateDate": "2013-06-29 11:21:32"
+        },
+        "OtherAdvocate": [
+            {
+                "AdvocateID": "1",
+                "Title": "Mr.",
+                "AdvocateName": "Rajkumar Sharma",
+                "MobileNo": "",
+                "MailID": "",
+                "Type": "2",
+                "UpdateDate": "2013-06-29 17:38:47"
+            },
+            {
+                "AdvocateID": "2",
+                "Title": "Mr.",
+                "AdvocateName": "Mukul Rastogi",
+                "MobileNo": "",
+                "MailID": "",
+                "Type": "1",
+                "UpdateDate": "2013-07-01 12:01:05"
+            }
+        ],
+        "UpdateTypeMaster": [
+            {
+                "UpdateTypeID": "1",
+                "UpdateType": "Conference",
+                "UpdateDate": "2013-07-04 13:05:16"
+            },
+            {
+                "UpdateTypeID": "2",
+                "UpdateType": "Apperance",
+                "UpdateDate": "2013-07-04 13:05:16"
+            },
+            {
+                "UpdateTypeID": "3",
+                "UpdateType": "Discussion",
+                "UpdateDate": "2013-07-04 13:05:16"
+            },
+            {
+                "UpdateTypeID": "4",
+                "UpdateType": "Drafting",
+                "UpdateDate": "2013-07-04 13:05:16"
+            },
+            {
+                "UpdateTypeID": "5",
+                "UpdateType": "Miscellaneous",
+                "UpdateDate": "2013-07-04 13:05:16"
+            }
+        ],
+        "CourtTypeMaster": [
+            {
+                "CourtTypeID": "1",
+                "CourtType": "High Court",
+                "UpdateDate": "2013-07-04 12:59:08"
+            },
+            {
+                "CourtTypeID": "2",
+                "CourtType": "Supreme Court",
+                "UpdateDate": "2013-07-04 12:59:08"
+            }
+        ],
+        "CaseMaster": {
+            "CaseID": "1",
+            "CustomerID": "1",
+            "ManualCaseID": "HC/02-07-2013/Arindam",
+            "CaseTitle": "Arindam Vs MCD",
+            "CaseDetail": "NA",
+            "CaseStatus": "true",
+            "UpdateDate": "2013-07-02 14:11:49"
+        },
+        "CaseUpdates": {
+            "CaseUpdateID": "782a4c89-e654-432b-99dd-45e7e3773012",
+            "UpdateTypeID": "1",
+            "CustomerID": "1",
+            "CaseID": "1",
+            "AdvocateID": "1",
+            "CourtTypeID": "0",
+            "Remark": "Test Update",
+            "Attachment": "",
+            "WorkDoneBy": "1",
+            "AppStatus": "1",
+            "AddDate": "2013-07-03T19:54:44.643+05:30",
+            "UpdateDate": "2013-07-03T20:02:07.917+05:30",
+            "Active": "true"
+        },
+        "ReminderMaster": {
+            "ReminderID": "453d5ad8-b929-4b0c-89d9-fe16a38d9915",
+            "ReminderDate": "2013-07-04T00:00:00+05:30",
+            "ReminderTime": "10:10",
+            "CustomerID": "1",
+            "CaseID": "1",
+            "AdvocateID": "2",
+            "UpdateTypeID": "1",
+            "ReminderTitle": "Hearing of Ramesh/Aditya",
+            "ReminderDetail": "Require Papers and evidance",
+            "Status": "1",
+            "AddBy": "1",
+            "AddDate": "2013-07-04 00:00:00",
+            "UpdateDate": "2013-07-04 00:00:00"
+        }
+    
+}

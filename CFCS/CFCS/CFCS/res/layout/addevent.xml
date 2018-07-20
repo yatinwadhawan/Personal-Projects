@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Event"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder Date" />
+
+                <TextView
+                    android:id="@+id/textViewReminderdate"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder Time" />
+
+                <Button
+                    android:id="@+id/buttonAddtime"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2.57"
+                    android:text="Add Time" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Customer ID" />
+
+                <Spinner
+                    android:id="@+id/spinnercustomerid"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Case ID" />
+
+                <Spinner
+                    android:id="@+id/spinnercaseid"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Senior Advocate ID" />
+
+                <Spinner
+                    android:id="@+id/spinnersenioadvocateid"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Update Type ID" />
+
+                <Spinner
+                    android:id="@+id/spinnerupdatetypeid"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Title" />
+
+                <EditText
+                    android:id="@+id/editTexttitle"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Details" />
+
+                <EditText
+                    android:id="@+id/editTextdetails"
+                    android:layout_width="132dp"
+                    android:layout_height="58dp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
